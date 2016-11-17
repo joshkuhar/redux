@@ -14,6 +14,7 @@ var RepositoryList = React.createClass({
         var repositories = this.props.repositories.map(function(repository) {
             return <Repository repository={repository} key={repository.name} />;
         });
+        console.log(this.props);
 
         return (
             <div className="repository-list">
